@@ -24,6 +24,24 @@
 
 ## [下载](https://github.com/Xmader/aria-ng-gui/releases/latest)
 
+## Aria2 配置文件路径
+
+* Windows: `%APPDATA%/aria-ng-gui/aria2.conf`
+* Linux: `~/.config/aria-ng-gui/aria2.conf` 或 `$XDG_CONFIG_HOME/aria-ng-gui/aria2.conf`
+* macOS: `~/Library/Application Support/aria-ng-gui/aria2.conf`
+
+## 使用 npm 安装
+
+```
+npm i -g aria-ng-gui
+```
+
+运行
+
+```
+AriaNgGUI
+```
+
 ---
 
 # AriaNg GUI
@@ -50,3 +68,21 @@
 ## [Docs](https://aria-ng.xmader.com/#/en/README)
 
 ## [Download](https://github.com/Xmader/aria-ng-gui/releases/latest)
+
+## Path to the aria2 config file
+
+* on Windows: `%APPDATA%/aria-ng-gui/aria2.conf`
+* on Linux: `~/.config/aria-ng-gui/aria2.conf` or `$XDG_CONFIG_HOME/aria-ng-gui/aria2.conf`
+* on macOS: `~/Library/Application Support/aria-ng-gui/aria2.conf`
+
+## Install using npm
+
+```
+npm i -g aria-ng-gui
+```
+
+run
+
+```
+AriaNgGUI
+```
