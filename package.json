@@ -1,0 +1,28 @@
+{
+  "name": "aria-ng-gui",
+  "version": "1.9.4",
+  "description": "An Aria2 GUI for Windows & Linux & MacOS",
+  "main": "index.js",
+  "homepage": "https://aria-ng.xmader.com/",
+  "bugs": {
+    "url": "https://github.com/Xmader/aria-ng-gui/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xmader/aria-ng-gui.git"
+  },
+  "author": "Xmader",
+  "bin": {
+    "AriaNgGUI": "cli.js"
+  },
+  "dependencies": {
+    "env-paths": "^2.2.0",
+    "extract-zip": "^1.0.3",
+    "fs-extra": "^8.0.1",
+    "node-fetch": "^2.6.0"
+  },
+  "scripts": {
+    "postinstall": "node install.js"
+  },
+  "license": "MIT"
+}
