@@ -22,7 +22,8 @@
     "node-fetch": "^2.6.0"
   },
   "scripts": {
-    "postinstall": "node install.js"
+    "postinstall": "node install.js",
+    "postpublish": "node update-version-number.js"
   },
   "license": "MIT"
 }
