@@ -53,6 +53,10 @@ const getInstalledVersion = () => {
     }
 }
 
+if (process.env.ARIA_NG_GUI_SKIP_BINARY_DOWNLOAD) {
+    process.exit(0)
+}
+
 const platformPath = getPlatformPath()
 const installedVersion = getInstalledVersion()
 const binaryPath = path.join(__dirname, "dist", platformPath)
