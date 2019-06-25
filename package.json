@@ -24,7 +24,8 @@
   "scripts": {
     "start": "node cli.js",
     "postinstall": "node install.js",
-    "prepublishOnly": "node prepublish.js"
+    "prepublishOnly": "node prepublish.js",
+    "clean": "node clean.js"
   },
   "license": "MIT"
 }
