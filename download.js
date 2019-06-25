@@ -37,7 +37,8 @@ const downloadArtifact = async ({
     unsafelyDisableChecksums = false,
 }) => {
     const fileName = `AriaNgGUI-${platform}-${arch}.zip`
-    const zipPath = path.join(cacheRoot, fileName)
+    const basePath = path.join(cacheRoot, version)
+    const zipPath = path.join(basePath, fileName)
 
     if (await fs.pathExists(zipPath) && !force) {
         // file exits
@@ -69,7 +70,7 @@ const downloadArtifact = async ({
         }
     }
 
-    await fs.ensureDir(cacheRoot)
+    await fs.ensureDir(basePath)
     await fs.writeFile(zipPath, data)
 
     return zipPath
